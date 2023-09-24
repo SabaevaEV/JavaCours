@@ -1,4 +1,4 @@
-package seminars;
+package seminars.seminar1;
 
 import java.util.Arrays;
 import java.util.Random;
