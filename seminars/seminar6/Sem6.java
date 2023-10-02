@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
+
 
 public class Sem6 {
 
@@ -24,7 +26,13 @@ public class Sem6 {
     HashSet h = new HashSet<>();
     h.add(3);
     System.out.println(mySet);
-    System.out.println(Arrays.toString(mySet.toArray));
+    System.out.println(Arrays.toString(mySet.toArray()));
+    Iterator <Integer> iterator = mySet.iterator();
+    while (iterator.hasNext()){
+        int i = iterator.next();
+        System.out.println(i);
+    }
+
     }
 
 }
@@ -68,5 +76,8 @@ class MySet <E> {
         return list;
     }
 
+    public Iterator <E> iterator(){
+        return mySet.keySet().iterator(); 
+    }
 
 }
