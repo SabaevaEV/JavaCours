@@ -1,4 +1,4 @@
-package HW;
+package HW.hw5;
 
 import java.util.ArrayList;
 import java.util.HashMap;
